@@ -10,12 +10,8 @@ public class UserModule {
 
     public static void main(String[] args) {
 
-        UserDAO dao = new UserDAOImpl();
-
-        
-        // REGISTER USER
-    
-
+//        UserDAO dao = new UserDAOImpl();
+//
 //        UserDTO user = new UserDTO();
 //
 //        user.setFullName("Varun N R");
@@ -27,77 +23,33 @@ public class UserModule {
 //
 //        boolean result = dao.registerUser(user);
 //
-//        if(result)
+//        if (result)
 //            System.out.println("User Registered Successfully");
 //        else
 //            System.out.println("Registration Failed");
-
-
-       
-        // LOGIN
-        
-
-//        UserDTO user = dao.loginUser("varun@gmail.com", "1234");
 //
-//        if(user != null)
-//            System.out.println(user);
-//        else
+//        UserDTO loginUser = dao.loginUser("varun@gmail.com", "1234");
+//
+//        if (loginUser != null) {
+//            System.out.println("Login Successful");
+//            System.out.println(loginUser);
+//        } else {
 //            System.out.println("Invalid Email or Password");
-
-
-       
-        // DISPLAY ALL USERS
-       
-
+//        }
+//
 //        List<UserDTO> list = dao.getAllUsers();
 //
-//        for(UserDTO user : list) {
+//        System.out.println("All Users:");
 //
-//            System.out.println(user);
-//
+//        for (UserDTO u : list) {
+//            System.out.println(u);
 //        }
-
-     
-        // SEARCH USER
-       
-//  UserDTO user = dao.getUserById(1);
 //
-//        if(user != null)
-//            System.out.println(user);
+//        UserDTO searchUser = dao.getUserById(1);
+//
+//        if (searchUser != null)
+//            System.out.println(searchUser);
 //        else
 //            System.out.println("User Not Found");
-
-
-        // UPDATE USER
-        
-
-//        UserDTO user = new UserDTO();
-//
-//        user.setUserId(1);
-//        user.setFullName("Varun NR");
-//        user.setEmail("varun@gmail.com");
-//        user.setMobile("9999999999");
-//        user.setUsername("varun");
-//        user.setPassword("12345");
-//        user.setRole("ADMIN");
-//
-//        boolean result = dao.updateUser(user);
-//
-//        if(result)
-//            System.out.println("Updated Successfully");
-//        else
-//            System.out.println("Update Failed");
-
-
-        // DELETE USER
-       
-
-//        boolean result = dao.deleteUser(1);
-//
-//        if(result)
-//            System.out.println("Deleted Successfully");
-//        else
-//            System.out.println("Delete Failed");
-
     }
 }

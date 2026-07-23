@@ -16,4 +16,5 @@ public interface ProductDAO {
 
     boolean deleteProduct(int productId);
     List<ProductDTO> getAllProductsWithDetails();
+   
 }

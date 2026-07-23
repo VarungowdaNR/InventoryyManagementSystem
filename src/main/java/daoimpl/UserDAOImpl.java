@@ -33,12 +33,15 @@ public class UserDAOImpl implements UserDAO {
 
             int result = ps.executeUpdate();
 
-            if (result > 0) {
-                return true;
-            }
+            System.out.println("Inserted Rows : " + result);
+
+            return result > 0;
 
         } catch (SQLException e) {
-            e.printStackTrace();
+
+        	 System.out.println("SQL Error: " + e.getMessage());
+        	    e.printStackTrace();
+
         }
 
         return false;

@@ -13,7 +13,7 @@ public class DBConnection {
         try {
 
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/inventory_management_system","root","Varun@1916");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/inventory_management","root","tigertiger");
         } catch (ClassNotFoundException | SQLException e) {
           e.printStackTrace();
         }
